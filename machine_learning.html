@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="each_project.css">
+        <title>Machine Learning Project</title>
+    </head>
+
+    <body>
+       <!--Naviagtion Bar-->     
+       <nav class="navbar">
+            <div class="logo-container"></div>
+                <h1 class="logo">Portfolio</h1>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>                
+            <a href="contact.html">Contacts</a> 
+        </nav>  
+
+        <div class="page">
+            <h1 class="page_name">PROJECT</h1>
+            <h2 class="subtitle">Machine Learning</h2>
+
+            <img class="proj-img" src="images/machine-learning-featured.jpg" alt=""> 
+
+            <div class="nav-timeline">
+                <hr class="line">
+                <div class="all-items">
+                    <div class="item active">
+                        <p class="item-name">Overview</p>
+
+                        <div class="circle-area">
+                            <a href="#overview" id="overview">
+                                <img class="icon-item" src="images/overview_1.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Documents</p>
+
+                        <div class="circle-area">
+                            <a href="#docs"  id="docs">
+                                <img class="icon-item" src="images/edit-box.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Links</p>
+
+                        <div class="circle-area">
+                            <a href="#links"  id="links">
+                                <img class="icon-item" src="images/link_icon.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="section overview" id="secttion-overview">
+                <br>
+                <h3 class="header">Descriptions</h3>
+                <p> For my CPSC 483: Machine Learning, my partner and I will use supervised 
+                    learning to discover what parenting habits cause some behavioral characteristics in their child. 
+                    We modeled 4 different classifers with RF, KNN, SVM, and AdaBoost to find the best performing model to 
+                    accurately classify our target labels. For our problem, we had 4 different target labels, each being a multi-class, 
+                    and after testing each classifer with each target label, the RF has the best performance. After determing the best 
+                    classifer for each target label, we performed permutation importance for the RF models to determine which are the top 10 
+                    descriptive features that has the most influnence on their respective target label.    
+                </p>
+                <br>
+
+                <h3 class="header">Technologies</h3>
+                <p>We used python along with ML libraries such as scikit-learn, matplotib, pandas, and numpy.</p>
+                <br>
+
+                <h3 class="header">Challenges</h3>
+                <p> Datasaet preprocessing was the most challenging, because the methodology we take to apporach this process will greatly impact our results.
+                    About 80% of our time was primarly focused on this process, as we had to fix the naming conventions of the features, determine the minimum percentage 
+                    of missing values a datapoint to remove from the dataset, how to fix imbalanced classes, how to perform encoding for categorical varaibel, and etc. 
+                </p>
+                <br>
+
+                <h3 class="header">Outcomes</h3>
+                <p> Successlly, we were able to incorprate 4 differenct classifers, and 3 out of the 4 classifers had performance ranging from 80% to 90%
+                    for recall, precision, f1-score, and accuracy.  
+                </p>
+                <br><br> 
+            </div>
+
+            <div class="section docs" id="section-docs" style="display: none;">
+                <!--SRS-->
+                <div class="individ-doc">
+                    <h3 class="header">Project Proposal</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/CPSC 483_ Project Proposal .pdf">
+                    </iframe>
+                </div>
+                <br>  
+            </div>
+
+            <div class="section links" id="section-links" style="display: none;">
+                <br>
+                <h3 class="header">Links</h3>
+
+                <p>
+                    Download this folder of our project if you want view .
+                    <a href="documents/ML_Code_and_Data" download>Click Here</a>
+                </p>
+                <br><br>        
+            </div>
+            
+        </div>
+    
+        <script src="project.js"></script>
+
+    </body>
+</html>

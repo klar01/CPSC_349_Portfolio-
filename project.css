@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&display=swap'); /*font-family: "Kumar One Outline", system-ui;*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*font-family: "Merriweather Sans", sans-serif;*/ 
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* want each project be stacked verically*/
+    overflow: hidden; 
+    align-content: space-between;
+    padding-bottom: 10px;
+}
+
+/*PROJECT*/
+.project{
+    position: relative;
+    top: 20px;
+    width:100%;
+    height: 350px;
+
+    display: flex;
+    flex-direction: row;    /*want words and image to be aligned horizontally*/
+    align-items: center;    /*center items in the vertical center */
+    justify-content: space-around;
+}
+
+.all_text{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*aligns the text to be VERTICAL center of container */
+    width: 50%;         /*good width-helps prevents some images being shrunk*/
+    height: 75%;
+    
+    background-color: white;
+    border: black solid 3px; 
+    box-shadow: 10px 10px;
+    padding: 10px;
+}
+
+.text{
+    padding: 7px;
+}
+
+.number-background{
+    position: relative;
+    left: 50px;
+    top: 50px;
+
+    font-family: "Kumar One Outline", system-ui;
+    font-size: 270px; 
+    color: rgba(95, 94, 94, 0.177);
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 0; 
+}
+
+.project-text{
+    position: relative;
+    width: 90%;
+    top:10px;
+    left: 40px;
+    padding: 10px;
+}
+
+.title{
+    position: relative;
+    width:100%;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 35px;
+}
+
+.descrip{
+    position: relative;
+    width: 100%;
+    font-size: larger;
+}
+
+.box{
+    position: relative;
+    width: 530px;
+    height: 330px;
+    border-radius: 15px;
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+    padding: 10px;
+}
+
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: -35%;
+    width: 850px;
+    height: 70%;
+    background-color: rgb(253, 145, 154);   
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box a{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-self: center;  
+}
+
+
+.project_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: rgb(240, 104, 104) solid 3px;
+}
+
+.project-btn{
+    position: relative;
+    visibility: hidden;
+    bottom: 5%;
+    left: 70%;
+    width: 120px;
+    padding: 5px;
+}
+
+
+/*responsive to screen size*/
+@media all and (max-width: 1220px){
+    .project{
+        padding: 20px;
+        justify-content: space-between;
+        height: 400px;
+    }
+ 
+    .box{
+        width: 420px;
+        height: 350px;
+    }
+
+    .all_text{
+        height: 80%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media all and (max-width: 940px){
+    .box{
+        width: 330px;
+        height: 330px;
+    }
+
+    .box::before{
+        top: 35%;
+        width: 650px;
+        left: -48%;
+        height: 50%; 
+    }
+
+    .all_text{
+        height: 85%;   
+    }
+
+    .project-text{
+       left: 20px;
+    }
+
+    .number-background{
+        left: 20px;
+    }
+}
+
+
+@media all and (max-width: 749px){
+    .box{
+        width: 250px;
+        height: 250px;
+    }
+
+    .box::before{
+        top: 35%;
+        width: 450px;
+        left: -30%;     
+    }
+
+    .box a{
+        position: relative;
+        width: 100%;
+        height: 220px;     
+    }
+    
+    .all_text{
+        height: 70%;
+        width: 45%;
+    }
+    
+    .number-background{
+        font-size: 200px; 
+        left: 20px;
+
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .descrip{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 559px){
+    .project{
+        height: 350px;
+        flex-direction: column; 
+    }
+
+    .all_text{
+        width: 90%;         /*good width-helps prevents some images being shrunk*/
+        height: 85%;
+    }
+
+    .number-background{
+        font-size: 250px;
+        left: 0px;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .project-btn{
+        visibility: visible;
+    }
+
+}
+
+@media all and (max-width: 510px){
+    .project-btn{  
+        bottom: 5%;
+        left: 50%;
+    }
+    
+}
+
+

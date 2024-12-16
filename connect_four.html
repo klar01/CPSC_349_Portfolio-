@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="each_project.css">
+        <title>AI Project</title>
+    </head>
+
+    <body>
+       <!--Naviagtion Bar-->     
+       <nav class="navbar">
+            <div class="logo-container"></div>
+                <h1 class="logo">Portfolio</h1>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>                
+            <a href="contact.html">Contacts</a>
+   
+        </nav>  
+
+        <div class="page">
+            <h1 class="page_name">PROJECT</h1>
+            <h2 class="subtitle">Connnect 4 with AI</h2>
+
+            <img class="proj-img" src="images/AI-Chess-01-1024x750.png" alt=""> 
+
+            <div class="nav-timeline">
+                <hr class="line">
+                <div class="all-items">
+                    <div class="item active">
+                        <p class="item-name">Overview</p>
+
+                        <div class="circle-area">
+                            <a href="#overview" id="overview">
+                                <img class="icon-item" src="images/overview_1.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Documents</p>
+
+                        <div class="circle-area">
+                            <a href="#docs"  id="docs">
+                                <img class="icon-item" src="images/edit-box.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Links</p>
+
+                        <div class="circle-area">
+                            <a href="#links"  id="links">
+                                <img class="icon-item" src="images/link_icon.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="section overview" id="secttion-overview">
+                <br>
+                <h3 class="header">Descriptions</h3>
+                <p> I'm working with two people to implement a evaluation function that will enable an 
+                    AI to play a deterministic game of our choosing.
+                </p>
+                <br>
+
+                <h3 class="header">Technologies</h3>
+                <p>We used python along libraries such as sys, math, numpy, and pygame.</p>
+                <br>
+
+                <h3 class="header">Challenges</h3>
+                <p> The most challenging part is creating an evaulation function that assigns a utility value to a internal node. It was 
+                    difficult because this function greatly impacts the optimal choice that the AI agent will make when it's the AI's turn.   
+                </p>
+                <br>
+
+                <h3 class="header">Outcomes</h3>
+                <p> Successlly, the key features of the hotel booking system. I've learned the general concpets of frontend, 
+                    but mostly importantly I learned from my mistakes of how to better structure the HTML and I need to incorporate repsonsiveness 
+                    into the design. 
+                </p>
+                <br><br> 
+            </div>
+
+            <div class="section docs" id="section-docs" style="display: none;">
+                <!--SRS-->
+                <div class="individ-doc">
+                    <h3 class="header">Project Proposal</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Connect_4_Proposal.pdf">
+                    </iframe>
+                </div>
+                <br>
+
+                <!--Class Diagram-->
+                <div class="individ-doc">
+                    <h3 class="header">Project Report</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Connect_4_Project_Report.pdf">
+                    </iframe>
+                </div>
+                <br>      
+            </div>
+
+            <div class="section links" id="section-links" style="display: none;">
+                <br>
+                <h3 class="header">Links</h3>
+
+                <p>
+                    Download this folder of our project if you want to play our AI game.
+                    <a href="documents/CPSC481-AI-Connect-4-Project-main.zip" download>Click Here</a>                 
+                </p>
+                <br><br>                 
+            </div>
+            
+        </div>
+    
+        <script src="project.js"></script>
+
+    </body>
+</html>

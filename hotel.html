@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="each_project.css">
+        <title>Hotel Project</title>
+    </head>
+
+    <body>
+       <!--Naviagtion Bar-->     
+       <nav class="navbar">
+            <div class="logo-container"></div>
+                <h1 class="logo">Portfolio</h1>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>                
+            <a href="contact.html">Contacts</a>
+   
+        </nav>  
+
+        <div class="page">
+            <h1 class="page_name">PROJECT</h1>
+            <h2 class="subtitle">Hotel Booking System</h2>
+
+            <img class="proj-img" src="images/booking-hotel.jpg" alt=""> 
+
+            <div class="nav-timeline">
+                <hr class="line">
+                <div class="all-items">
+                    <div class="item active">
+                        <p class="item-name">Overview</p>
+
+                        <div class="circle-area">
+                            <a href="#overview" id="overview">
+                                <img class="icon-item" src="images/overview_1.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Documents</p>
+
+                        <div class="circle-area">
+                            <a href="#docs"  id="docs">
+                                <img class="icon-item" src="images/edit-box.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item active">
+                        <p class="item-name">Links</p>
+
+                        <div class="circle-area">
+                            <a href="#links"  id="links">
+                                <img class="icon-item" src="images/link_icon.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section overview" id="secttion-overview">
+                <br>
+                <h3 class="header">Descriptions</h3>
+                <p>In this project, combining the lessons we were taught in CPSC 362: Software Engineering, my group aimed created a hotel 
+                    booking system. This software will allow hotel employees to record and manage reservations, 
+                    check-ins, and check-outs. This program will also generate booking/billing receipts for managers and
+                    send a confirmation email to the customer. 
+                </p>
+                <br>
+
+                <h3 class="header">Technologies</h3>
+                <p>We used Firebase, HTML, CSS, JavaScript</p>
+                <br>
+
+                <h3 class="header">Challenges</h3>
+                <p> It was the first project that required me to do a lot of independtly researching how to do accomplish certain tasks, such as 
+                    how to create a user interface with HTML, CSS, and JavaScript. Also, I had to learn how to connect backend to frontend. 
+                    Most of my previous projects have always been directly related to my class lessons and course work, but the lessons for this class 
+                    only helped with how to plan and apporach our project. Since this was my first time learning HTML, CSS, and JavaScript, I was only 
+                    able to gain a general understanding wih some of the basic features, so I wasn't able to accomplish the more complex features 
+                    from my UX design. Also, I wasn't able to make my interface responsive to other screen sizes.    
+                </p>
+                <br>
+
+                <h3 class="header">Outcomes</h3>
+                <p>Successlly, the key features of the hotel booking system. I've learned the general concpets of frontend, 
+                    but mostly importantly I learned from my mistakes of how to better structure the HTML and I need to incorporate repsonsiveness 
+                    into the design. 
+                </p>
+                <br><br> 
+
+            </div>
+
+            <div class="section docs" id="section-docs" style="display: none;">
+                <!--SRS-->
+                <div class="individ-doc">
+                    <h3 class="header">SRS</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/SRS.pdf">
+                    </iframe>
+                </div>
+                <br>
+
+                <!--data flow-->
+                <div class="individ-doc">
+                    <h3 class="header">Data Flow Diagram</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Data_Flow_Diagram.pdf">
+                    </iframe>
+                </div>
+                <br>
+
+                <!--Class Diagram-->
+                <div class="individ-doc">
+                    <h3 class="header">Class Diagram</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Class_Diagram.pdf">
+                    </iframe>
+                </div>
+                <br>
+
+                <!--test case-->
+                <div class="individ-doc">
+                    <h3 class="header">Testing Report</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Test Case Documentation_and_Testing_Report.pdf">
+                    </iframe>    
+                </div>
+                <br>
+                
+                <!--Final report-->
+                <div class="individ-doc">
+                    <h3 class="header">Final Report</h3>
+
+                    <iframe class="pdf" 
+                        src= "documents/Final Report.pdf">
+                    </iframe>
+                </div>
+                <br>
+
+            </div>
+
+            <div class="section links" id="section-links" style="display: none;">
+                <br>
+                <!--Figma: UX design--> 
+                <h3 class="header">Links</h3>
+                <p>
+                    To see our concept of UX design for this project.
+                    <a href="https://www.figma.com/design/VNvFtNArZNJTmuTa1WQ2QM/HOTEL-BOOKING-PROJECT?node-id=0-1&t=eih6sNJnvnmhHzx3-1" target="_blank">Click Here</a>
+                </p>
+                <br>
+
+                <p>
+                    To access the github repository to our hotel booking system.
+                    <a href="https://github.com/chelseaoh/Hotel-Booking-System-Project" target="_blank">Click Here</a> 
+                </p>
+                <br><br>
+                    
+            </div>
+            
+        </div>
+    
+        <script src="project.js"></script>
+    </body>
+</html>

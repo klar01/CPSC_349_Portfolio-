@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact.css">
+        <title>Contact Page</title>
+    </header>
+
+    <body>
+        <!--Naviagtion Bar -->
+        <nav class="navbar">
+            <div class="logo-container"></div>
+                <h1 class="logo">Portfolio</h1>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>                
+            <a href="contact.html">Contacts</a>   
+        </nav>
+
+        <!--Page Content-->
+        <div class="page" id="blur">
+            <h1 class="page_name">CONTACTS</h1>
+
+            <div class="container" >
+                <div class="right-side"> 
+                    <h1>Get in Touch</h1>
+
+                    <div class="contact_icon">
+                        <div class="top">
+                            <div class="phone"> 
+                                <img src="images/pink_phone.png" alt="phone number icon">
+            
+                                <div class="text">
+                                    <h3>Phone Number</h3>
+                                    <p>(888) 888-888</p>
+                                </div>
+                            </div>
+                            
+                            <div class="email">
+                                <img src="images/pink_black_mail.jpg" alt="email icon">
+            
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p>klar@csu.fullerton.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Links to social media profiles (GitHub, LinkedIn, etc.).-->
+                        <div class="bottom">
+                            <a href="https://github.com/klar01" target="_blank"> 
+                                <img class="github" src="images/github_3291695.png" alt="GitHub link">
+                            </a>
+                            <a href="https://www.linkedin.com/in/klarissa-navarro-528724337" target="_blank"> 
+                                <img class="linkedin" src="images/linkedin_black.png" alt="LinkedIn link">
+                            </a> 
+                        </div>                  
+                    </div>
+                </div>
+                
+                <div class="left-side">
+                    <!--contact form--> 
+                    <form action="" class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="inputs"> <br><br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="inputs"> <br><br>  
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="inputs"></textarea> <br><br> 
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="submit-btn">Submit</button>         
+                    </form> 
+                </div>
+            </div>          
+        </div>
+
+        <!--pop up message after clicking the submit button--> 
+        <div class="pop-up" id="popup" > 
+            <div class="content">
+                <img src="images/checkmark.png">
+
+                <div class="words">
+                <h1>Thank you!</h1>
+                    <p>Your message has successfully been sent</p> 
+                </div>
+                
+                <button class="ok-btn" id="close-popup">OK</button>
+            </div>
+        </div>
+
+        <script>
+            const inputs = document.querySelectorAll(".inputs");
+
+            for(let i = 0; i < inputs.length; i++){
+                let currLabel = inputs[i].parentElement.firstElementChild;
+
+                /*move the label above text box*/
+                inputs[i].addEventListener("focus", function(){
+                    currLabel.classList.add("move-up");
+                })
+
+                /*return the label to orginal position; ONLY when there's nothing in the text box*/
+                inputs[i].addEventListener("blur", function(){
+                    if(inputs[i].value === ""){  
+                        currLabel.classList.remove("move-up");  
+                    }            
+                })                
+            }
+            
+            let popup = document.getElementById("popup");
+            let page = document.getElementById("page");
+            var blur = document.getElementById("blur");
+
+            /*open the popup message*/
+            const submitBtn = document.getElementById("submit-btn");
+            submitBtn.addEventListener("click", function(event){
+                blur.classList.toggle("active");
+
+                event.preventDefault(); 
+                popup.classList.add("open-popup");
+            });
+
+            /*close the popup message*/
+            const closeBtn = document.getElementById("close-popup");
+            closeBtn.addEventListener("click", function(event){
+                blur.classList.toggle("active");
+                popup.classList.remove("open-popup");
+            });
+        </script>
+
+    </body>
+</html>

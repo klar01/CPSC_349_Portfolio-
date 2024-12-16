@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="each_project.css">
+        <link rel="stylesheet" href="databse.html">
+        <title>Database Project</title>
+    </head>
+
+    <body>
+       <!--Naviagtion Bar-->      
+       <nav class="navbar">
+            <div class="logo-container"></div>
+                <h1 class="logo">Portfolio</h1>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="skill.html">Skills</a>                
+            <a href="contact.html">Contacts</a>
+        </nav>  
+        
+        <div class="page">
+            <h1 class="page_name">PROJECT</h1>
+            <h2 class="subtitle">A Mini-Scale of School Database</h2> 
+
+            <img class="proj-img" src="images/database-1.webp" alt=""> 
+
+            <div class="nav-timeline">
+                <hr class="line">
+                <div class="all-items">
+                    <div class="item">
+                        <p class="item-name">Overview</p>
+
+                        <div class="circle-area"> 
+                            <a href="#overview" id="overview">
+                                <img class="icon-item" src="images/overview_1.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item">
+                        <p class="item-name">Documents</p>
+
+                        <div class="circle-area">
+                            <a href="#docs"  id="docs">
+                                <img class="icon-item" src="images/edit-box.svg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                    <div class="item">
+                        <p class="item-name">Links</p>
+
+                        <div class="circle-area">
+                            <a href="#links"  id="links">
+                                <img class="icon-item" src="images/link_icon.jpg" alt="">
+                            </a>
+                        </div> 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section overview" id="secttion-overview">
+                <br>
+                <h3 class="header">Descriptions</h3>
+                <p>To demonstrate our understanding of CPSC 332: File Structures and Database Systems,
+                    each group was required to create a web database application. We were asked to 
+                    create a mini-scale of the school database based on the following: 
+                </p>
+                <div class="bullet-pts">
+                    <ol type="1">
+                        <li> The database keeps information of each professor, including the social security num-
+                            ber, name, address, telephone number, sex, title, salary, and college degrees. The address
+                            includes street address, city, state, and zip code. The telephone number includes the
+                            area code and 7 digit number.
+                        </li>
+
+                        <li> Each department has a unique number, name, telephone, once location, and a chair-
+                            person who is a professor.
+                        </li>
+
+                        <li> Each course has a unique number, title, textbook, units. Each course also has a set
+                             of prerequisite courses. Each course is offered by a department.
+                        </li>
+
+                        <li> Each course may have several sections. Each section has a section number that is
+                            unique within the course, a classroom, a number of seats, meeting days, a beginning
+                            time, an ending time. Each section is taught by a professor.
+                        </li>
+
+                        <li> The database keeps student records, including the campus wide ID, name, address,
+                            and telephone number. Each student majors in one department and may minor in sev-
+                            eral departments. The name includes first name and last name.
+                        </li>
+
+                        <li> The database keeps enrollment records. Each record has a student, a course section,
+                             and a grade.
+                        </li>
+                    </ol>
+                 </div>
+
+                <br>
+
+                <p>Design the follwing database and create at least the following numbers of records:</p>
+                <div class="table-section"> 
+                    <table>
+                        <tr>
+                            <td>8 students</td>
+                            <td>2 departments</td>
+                            <td>3 professors</td>
+                        </tr>
+                        <tr>
+                            <td>4 courses</td>
+                            <td>6 sections</td>
+                            <td>20 enrollment records</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+
+                <p>Provide interfaces for the following individuals:</p>
+                <div class="bullet-pts"> 
+                    <ol type="1">
+                        <li>For the Professors:
+                            <div class="bullet-pts">
+                                <ol type="a">
+                                    <li>Given the social security number of a professor, list the titles, classrooms, meeting
+                                        days and time of his/her classes.</li>
+                                    <li>Given a course number and a section number, count how many students get each
+                                        distinct grade, i.e. 'A', 'A-', 'B+', 'B', 'B-', etc.</li>
+                                </ol>
+                            </div>
+                        </li>
+
+                        <li>For the Students:
+                            <div class="bullet-pts">
+                                <ol type="a">
+                                    <li>Given a course number list the sections of the course, including the classrooms, the
+                                        meeting days and time, and the number of students enrolled in each section.</li>
+                                    <li>Given the campus wide ID of a student, list all courses the student took and the
+                                        grades.</li>
+                                </ol>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+                <h3 class="header">Technologies</h3>
+                <p>We used MySQL, PHP, and HTML</p>
+                <br>
+
+                <h3 class="header">Challenges</h3>
+                <p> Due to security reasons, when creating the database web application, this application can only be viewed on campus.
+                    This was the primary challenge becuase we each had a limited time to be on campus, besides attenting classes, to build
+                    the interface and check if everything was functioning properly. The person who was tasked to finish the interface and 
+                    connecting to database, failed to properly complete these tasks. The very little remaining time left until the submission, 
+                    I was only person avaiable to rush to school to recreate the interface, but I didn't have the time to check if it was 
+                    connected to the web application since campus was closing.  
+                </p>
+                <br>
+
+                <h3 class="header">Outcomes</h3>
+                <p>Successlly, created an interface and created all the required databases.</p>
+                <br><br> 
+            </div>
+
+            <div class="section docs" id="section-docs" style="display: none;">
+                <iframe class="pdf" 
+                    src= "documents/project database.pdf">
+                </iframe>
+                <br>
+            </div>
+
+            <div class="section links" id="section-links" style="display: none;">
+                <br>
+                <h3 class="header">Links</h3>
+                <p> For secuirty reason, it's not possible to view the the web application of the school database. 
+                    The database was built on using the CSUF's VPN. You can look at the document to view how and 
+                    what we implemented to create a mini-scale of the school database.    
+                </p>
+                <br><br>   
+            </div>
+            
+        </div>
+    
+        <script src="project.js"></script>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');  /* font-family: "Amatic SC", sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); /*font-family: "Libre Baskerville", serif;e*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); /*font-family: "Dancing Script", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); /*font-family: "Caveat", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap'); /*font-family: "Merriweather Sans", sans-serif;*/ 
+
+*{
+    box-sizing: border-box; /*tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(images/aesthetic-minimal-white-grid-pattern-wallpaper_53876-96916.avif);
+    padding-bottom: 70px;
+}
+
+.page{
+    position: relative;
+    padding: 10px 10px 50px 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*NAVBAR*/
+/*container for the menu items*/
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    display:flex; /*set element as a flexbox; default: elements are side-by-side*/
+    justify-content: flex-end; /*moves the menu to the end of the flexbox (aka the right edge) */
+    align-items: center; /*using the flexbox to center the elements vertically inside it (logo & menu)*/
+    flex-direction: row;
+    background-color: rgb(240, 104, 104);
+    border-bottom: black solid 3px;
+}
+
+/*NOTE: this is the INDIVIDUAL elements within navbar */
+.navbar a{
+    height: 100%;
+    padding: 0 15px; /*adds spacing between elemenet*/
+    text-decoration: none;  /*want to remove the underline that comes with being a hyperlink*/
+    display: flex;          /*set indiviual elements as a flexbox; default: elements are side-by-side*/
+    align-items: center;    /*using the flexbox to center the eleemnts vertically*/
+    color:black;       
+    font-size: larger;     
+    font-weight: bolder;
+    
+}
+
+.navbar a:hover{
+    background-color: rgb(255, 133, 133);
+}
+
+.logo{
+    width:100%;
+    display: flex;
+    align-items: left;   /*move it to left*/
+    font-family: "Amatic SC", sans-serif;
+    font-size: 55px;
+    padding-left: 15px; /*add space to the left*/
+    z-index: 1000;
+}
+
+.page_name{
+    position: relative;
+    top: 15px;
+    left: 15px;
+
+    font-size: 60px;
+    padding: 15px;
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: bolder;
+
+    background-color: white;
+    width: 500px;
+    border-bottom: black solid 3px;
+    box-shadow: 10px 10px;
+    border: black solid 3px;
+}
+
+@media all and (max-width: 945px){
+    .page_name{
+        font-size: 40px;
+        padding: 15px;
+        width: 300px;     
+    }
+}
+
+@media all and (max-width: 600px)
+{   
+    /*resizing the NAVBAR*/
+    .navbar{
+        height: 70px;
+    }
+    .logo{
+        font-size: 30px;
+        padding-left: 5px;
+    }
+    .navbar a{
+        font-size: small;
+        padding: 0 5px; /*spacing between elemenet*/
+    }
+}

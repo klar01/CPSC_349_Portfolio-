@@ -1,0 +1,37 @@
+.container{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.about-text{
+    position: relative;
+    font-size: x-large;
+    width: 95%;
+    padding: 30px;
+    border: black solid 3px;
+    background-color: white;
+    box-shadow: 10px 10px;
+}
+
+.pdf{
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+
+    width: 95%;
+    height: 500px;
+    border: black solid 3px;
+    box-shadow: 10px 10px;
+}
+
+@media all and (max-width: 840px){
+    .about-text, .pdf{
+        width: 85%;
+    }
+}
